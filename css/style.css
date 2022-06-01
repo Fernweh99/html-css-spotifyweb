@@ -1,0 +1,15 @@
+:root {
+	--bgc-footer: #282828;
+}
+
+/* Reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/* Generics */
+body {
+	font-family: 'Montserrat', sans-serif;
+}
