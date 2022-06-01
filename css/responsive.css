@@ -1,0 +1,40 @@
+@media screen and (max-width:992px) {
+    
+}
+
+@media screen and (max-width:768px) {
+    
+}
+
+@media screen and (max-width:576px) {
+  #side-bar {
+      flex-basis: 50px;
+  }
+
+  #side-bar li {
+    margin:0 auto
+  }
+
+  #main {
+    flex-basis: calc(100% - 50px);
+  }
+  
+  header.main-header {
+    left: 50px;
+  }
+
+  #logo {
+      display: none;
+  }
+
+  #logo-small {
+      display: block;
+      width: 30px;
+      margin: 10px auto;
+  }
+
+/* Utils */
+  .txt-ctr-r576{
+    text-align: center;
+  }
+}
