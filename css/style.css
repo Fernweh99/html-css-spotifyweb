@@ -45,7 +45,7 @@ main ul {
   margin-bottom: 15px;
 }
 
-/* Section side-bar */
+/* left side-bar */
 #side-bar {
   flex-basis: 230px;
   background-color: black;
@@ -66,7 +66,7 @@ main ul {
   color: #7B7E82;
 }
 
-/* Section Main */
+/* central main */
 #main {
   flex-basis: calc(100% - 230px);
   height: calc(100vh - 80px);
@@ -97,4 +97,47 @@ header.main-header {
   color: currentColor;
   font-weight: 600;
   font-size: 13px;
+}
+
+/* Main content */
+.main-content {
+  padding: 0 20px;
+}
+
+.main-content h2 {
+  color: white;
+  font-weight: 600;
+}
+
+.main-content h3 {
+  font-size: 16px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.main-content .subtitle {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Cards */
+.deck {
+  display: flex;
+  margin-left: -8px;
+}
+
+.card {
+  flex-basis: calc(100vw /6 - 60px);
+  margin:  20px 8px;
+}
+
+.cover-playlist {
+  width: calc(100vw /6 - 60px) ;
+  height: calc(100vw /6 - 60px);
+  background-color: gray;
+  margin-bottom: 10px;
+}
+
+.info-playlist {
+  width: calc(100vw /6 - 60px);
 }
