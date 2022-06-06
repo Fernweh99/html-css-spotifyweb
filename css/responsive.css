@@ -1,21 +1,33 @@
 @media screen and (max-width:992px) {
-    
+  .card {
+    flex-basis: calc(100vw /4 - 85px);
+  }
+  .cover-playlist {
+    width: calc(100vw /4 - 85px) ;
+    height: calc(100vw /4 - 85px);
+  }
 }
 
 @media screen and (max-width:768px) {
-    
+  .card {
+    flex-basis: calc(100vw /2 - 150px);
+  }
+  .cover-playlist {
+    width: calc(100vw /2 - 150px) ;
+    height: calc(100vw /2 - 150px);
+  }
 }
 
 @media screen and (max-width:576px) {
-  #side-bar {
+  .side-bar {
       flex-basis: 50px;
   }
 
-  #side-bar li {
+  .side-bar li {
     margin:0 auto
   }
 
-  #main {
+  main {
     flex-basis: calc(100% - 50px);
   }
   
@@ -31,6 +43,15 @@
       display: block;
       width: 30px;
       margin: 10px auto;
+  }
+
+  .card {
+    flex-basis: calc(100vw /2 - 60px);
+  }
+
+  .cover-playlist {
+    width: calc(100vw /2 - 60px) ;
+    height: calc(100vw /2 - 60px);
   }
 
 /* Utils */
