@@ -19,30 +19,57 @@
 }
 
 @media screen and (max-width:576px) {
+  /* Sidebar */
   .side-bar {
       flex-basis: 50px;
   }
 
   .side-bar li {
-    margin:0 auto
+    margin:0 auto;
+    padding: 0;
   }
 
+  .side-bar h2 {
+    display: none;
+  }
+
+  .side-bar h3 {
+    display: none;
+  }
+
+  .side-bar li.active {
+    padding-left: 0px;
+    border: 0;
+  }
+
+  .side-bar .create-playlist {
+    display: none;
+  }
+
+  .side-bar .index-playlist {
+    display: none;
+  }
+  .side-bar .user {
+    display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+#logo-small {
+    display: block;
+    width: 30px;
+    margin: 10px auto;
+  }
+
+/* Main */
   main {
     flex-basis: calc(100% - 50px);
   }
   
   header.main-header {
     left: 50px;
-  }
-
-  #logo {
-      display: none;
-  }
-
-  #logo-small {
-      display: block;
-      width: 30px;
-      margin: 10px auto;
   }
 
   .card {
@@ -57,5 +84,9 @@
 /* Utils */
   .txt-ctr-r576{
     text-align: center;
+  }
+
+  .j-ctr-576 {
+    justify-content: center;
   }
 }
