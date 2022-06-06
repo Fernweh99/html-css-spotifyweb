@@ -25,6 +25,7 @@ body {
 footer {
   height: 80px;
   background-color: var(--bgc-footer);
+  color: #7B7E82;
   z-index: 1;
   
 }
@@ -250,4 +251,60 @@ header.main-header {
 
 .cover-playlist img.circle {
   border-radius: 50%;
+}
+
+/* Foter */
+footer img {
+  height: 40px;
+}
+
+footer .subtitle {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+footer h3 {
+  color: white;
+  font-size: 12px;
+}
+
+.row {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-between;
+}
+
+.col-left {
+ flex-basis: 20%;
+}
+
+.col-center {
+ flex-basis: 50%;
+}
+
+.col-right {
+ flex-basis: 20%;
+}
+
+.song {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+.info-song, .option-song i{
+  margin-left: 10px;
+}
+
+.option-song {
+  margin-left: 40px;
+}
+
+.settings {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: end;
 }

@@ -24,6 +24,10 @@
       flex-basis: 50px;
   }
 
+  .side-bar img {
+    margin-right: 0;
+  }
+
   .side-bar li {
     margin:0 auto;
     padding: 0;
