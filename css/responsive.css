@@ -16,6 +16,10 @@
     width: calc(100vw /2 - 150px) ;
     height: calc(100vw /2 - 150px);
   }
+
+  .bar.speaker {
+    display: none;
+  }
 }
 
 @media screen and (max-width:576px) {
@@ -85,6 +89,21 @@
     height: calc(100vw /2 - 60px);
   }
 
+/*Footer  */
+.settings {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.save-song {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.settings i {
+  margin-bottom: 5px;
+}
+
 /* Utils */
   .txt-ctr-r576{
     text-align: center;
@@ -92,5 +111,24 @@
 
   .j-ctr-576 {
     justify-content: center;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .card {
+    flex-basis: calc(100vw - 90px);
+  }
+
+  .cover-playlist {
+    width: calc(100vw - 90px) ;
+    height: calc(100vw - 90px);
+  }
+
+  .settings {
+    display: none;
+  }
+
+  .song img {
+    display: none;
   }
 }
