@@ -164,6 +164,7 @@ footer {
 
 .create-playlist .icon-create {
   font-size: 45px;
+  transition: color 0.3s;
 }
 
 .side-bar .index-playlist {
@@ -206,6 +207,7 @@ footer {
 .user div i {
   font-size: 13px;
   color: #7B7E82;
+    transition: color 0.3s;
 }
 
 /* central main */
@@ -221,6 +223,7 @@ main {
 /* Header */
 header.main-header {
   position: fixed;
+  z-index: 1;
   height: 80px;
   top: 0;
   right: 0;
@@ -234,7 +237,8 @@ header.main-header {
   margin-top: 20px;
   font-size: 12px;
   font-weight: 600;
-  margin-right: 5px;
+  margin-right: 10px;
+  transition: transform 0.4s, color 0.4s;
 }
 
 /* Main nav */
@@ -381,6 +385,7 @@ footer h3 {
 .action-song-col i, .settings i{
   margin-right: 20px;
   color: white;
+  cursor: pointer;
 }
 
 p.time {
@@ -399,6 +404,7 @@ p.time {
   height: 4px;
   background-color: #898d93;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .bar.time {
@@ -409,6 +415,7 @@ p.time {
   height: 4px;
   border-radius: 5px;
   background-color: #ccd0d6;
+  position: relative;
 }
 
 .bar-realtime.time {
@@ -428,6 +435,7 @@ p.time {
 /* Header btn */
 .main-header a.btn:hover {
   border-color: white;
+  transform: scale(1.08);
 }
 
 /* Card */
@@ -466,7 +474,15 @@ p.time {
 }
 
 /* Side bar */
-.side-bar ul li:hover h3, .side-bar ul li:hover h2{
+.side-bar ul li:hover h3, 
+.side-bar ul li:hover h2,
+.side-bar ul li:hover i{
+  color: white;
+  cursor: pointer;
+}
+
+.user .download-app:hover i,
+.user .download-app:hover h3{
   color: white;
   cursor: pointer;
 }
@@ -474,4 +490,35 @@ p.time {
 .side-bar ul li:hover img {
   filter: invert(0);
   cursor: pointer;
+}
+
+/* Footer */
+.info-song p.subtitle:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.save-song i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.option-song i:hover {
+  transform: scale(1.05);
+}
+
+.bar:hover .bar-realtime {
+  background-color: #ADFF2E;
+}
+
+.bar:hover .bar-realtime::after{
+  content: " ";
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(4px , -4px);
 }
