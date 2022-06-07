@@ -1,3 +1,12 @@
+/* font awesome */
+/* <i class="fa-solid fa-arrow-rotate-right"></i>
+<i class="fa-solid fa-backward-step"></i>
+<i class="fa-regular fa-circle-play"></i>
+<i class="fa-solid fa-forward-step"></i>
+<i class="fa-solid fa-shuffle"></i>
+*/
+
+
 :root {
   --bgc-footer: #282828;
 }
@@ -253,7 +262,7 @@ header.main-header {
   border-radius: 50%;
 }
 
-/* Foter */
+/* Footer */
 footer img {
   height: 40px;
 }
@@ -294,11 +303,11 @@ footer h3 {
   align-items: center;
 }
 
-.info-song, .option-song i{
+.info-song, .save-song i{
   margin-left: 10px;
 }
 
-.option-song {
+.save-song {
   margin-left: 40px;
 }
 
@@ -307,4 +316,57 @@ footer h3 {
   height: 80px;
   align-items: center;
   justify-content: end;
+}
+
+.action-song-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.action-song-col i, .settings i{
+  margin-right: 20px;
+  color: white;
+}
+
+p.time {
+  display: inline-block;
+  font-size: 10px;
+  color: white;
+}
+
+.bar-song {
+  width: 100%;
+  text-align: center;
+}
+
+.bar {
+  display: inline-block;
+  height: 4px;
+  background-color: #898d93;
+  border-radius: 5px;
+}
+
+.bar.time {
+  width: 70%;
+}
+
+.bar-realtime {
+  height: 4px;
+  border-radius: 5px;
+  background-color: #ccd0d6;
+}
+
+.bar-realtime.time {
+  width: 15%;
+}
+
+.bar.speaker {
+  width: 40%;
+}
+
+.bar-realtime.speaker {
+  width: 20%;
 }
