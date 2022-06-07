@@ -36,7 +36,7 @@ footer {
   background-color: var(--bgc-footer);
   color: #7B7E82;
   z-index: 1;
-  
+
 }
 
 /* Utils */
@@ -97,6 +97,23 @@ footer {
   justify-content: space-between;
 }
 
+.side-bar li {
+  padding: 0 17px;
+  color: #7B7E82;
+}
+
+.side-bar h2 {
+  font-size: 14px;
+  color: white;
+  transition: color 0.3s;
+}
+
+.side-bar h3 {
+  font-size: 12px;
+  color: #7B7E82;
+  transition: color 0.3s;
+}
+
 .upper-sidebar {
   height: calc(100% - 80px);
 }
@@ -113,38 +130,24 @@ footer {
   filter: invert(0);
 }
 
-.side-bar li {
-  padding: 0 17px;
-  color: #7B7E82;
-}
-
-.side-bar h2 {
-  font-size: 14px;
-  color: white;
-}
-
-.side-bar h3 {
-  font-size: 12px;
-  color: #7B7E82;
-}
-
 .upper-sidebar img {
   height: 26px;
   margin-right: 5px;
   filter: invert(0.5);
+  transition: filter 0.3s;
 }
 
-li.active{
+.side-bar li.active{
   padding-left: 14px;
   color: white;
   border-left: 3px solid #ADFF2E;
 }
 
-li.active img {
+.side-bar li.active img {
   filter: invert(0);
 }
 
-li.active h3 {
+.side-bar li.active h3 {
   color: white;
 }
 
@@ -241,12 +244,23 @@ header.main-header {
   flex-wrap: wrap;
 }
 
+.main-nav li.active::after {
+  content: "";
+  height: 2px;
+  background-color: #ADFF2E;
+  width: 30px;
+  display: block;
+  margin: 0 auto;
+}
+
 .main-nav a, .main-nav li{
   display: inline-block;
   margin: 10px 5px;
+  margin-bottom: 2px;
   color: currentColor;
   font-weight: 600;
   font-size: 13px;
+  transition: color 0.3s;
 }
 
 /* Main content */
@@ -280,12 +294,15 @@ header.main-header {
 .card {
   flex-basis: calc(100vw /6 - 60px);
   margin:  25px 8px;
+  cursor: pointer;
 }
 
 .cover-playlist {
   width: calc(100vw /6 - 60px) ;
   height: calc(100vw /6 - 60px);
   margin-bottom: 18px;
+  transition: transform 0.5s;
+  position: relative;
 }
 
 .cover-playlist img {
@@ -404,4 +421,57 @@ p.time {
 
 .bar-realtime.speaker {
   width: 20%;
+}
+
+/* EFFECTS */
+
+/* Header btn */
+.main-header a.btn:hover {
+  border-color: white;
+}
+
+/* Card */
+.card:hover .cover-playlist {
+  transform: translateY(-10px) scale(1.05);
+}
+
+.card:hover .cover-playlist::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#popular-artist .card:hover .cover-playlist::before {
+  border-radius: 50%;
+}
+
+.card:hover .cover-playlist::after {
+  font: var(--fa-font-regular);
+  content: "\f144";
+  font-size: 35px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Main nav */
+.main-nav a:hover {
+  color: white;
+}
+
+/* Side bar */
+.side-bar ul li:hover h3, .side-bar ul li:hover h2{
+  color: white;
+  cursor: pointer;
+}
+
+.side-bar ul li:hover img {
+  filter: invert(0);
+  cursor: pointer;
 }
